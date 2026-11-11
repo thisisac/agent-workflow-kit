@@ -1,11 +1,17 @@
 # Agent Workflow Kit
 
-**Keep research, execution, and improvement moving across sessions.**
+**Give your agent a goal. Let each result shape the next attempt.**
 
-An agent skill for research and iterative project improvement: investigate a
-question, build and review a plan, execute it, verify the result, and decide what
-comes next. Goals, evidence and progress stay with the task, for a single cycle
-or work continued across sessions and scheduled wakeups.
+An agent skill for research and project optimization that takes multiple
+attempts: repeated experiments, model training runs, and plan revisions to
+improve results and evaluation metrics. Each cycle investigates the problem,
+builds and reviews a plan, executes it, verifies the results, and turns
+reflection into a concrete change for the next attempt.
+
+Goals, evidence, attempted approaches, and progress stay with the task across
+sessions and scheduled wakeups. Actual results guide whether to continue,
+change direction, or stop within the agreed permissions, resources, and
+acceptance criteria.
 
 [中文](README.zh-CN.md) · [Quick start](#quick-start) · [Workflow](#workflow) · [Monitoring](#monitoring-and-continuation) · [Documentation](#documentation)
 
@@ -13,7 +19,7 @@ or work continued across sessions and scheduled wakeups.
 
 | Task | What a cycle produces |
 |---|---|
-| Research and model experiments | A testable hypothesis grounded in sources and local evidence, a reviewed design, and a result-based next decision |
+| Research and model training | A grounded hypothesis and reviewed plan, with metrics compared across experiments or training runs and lessons applied to the next plan |
 | Code and performance optimization | An inspected execution path, an evidence-backed change, and a comparison covering gains and regressions |
 | Learning and method validation | A defined knowledge gap, relevant material and practice, and an independent check for the next learning step |
 | Data processing | Verified inputs and coverage, a concrete partition action, completeness checks and a confirmed place to resume |
