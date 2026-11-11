@@ -97,3 +97,26 @@ the host; this kit exposes no pretend parameters for services it does not ship.
 Tune using actual failed checks, duplicate effects, irrelevant work, calls,
 latency and cost under fixed acceptance. Fewer steps alone do not establish
 better decisions. Never tune thresholds on protected final evaluation results.
+
+## Capability adaptation settings
+
+These optional **host/skill instruction settings** govern
+[skill evolution](skill-evolution.md). They are not `Workflow` constructor
+parameters, engine-enforced quotas or a new resource allowance. Store choices
+in the existing task contract/profile; the host enforces permissions and bounds.
+The host-neutral `workflow.json` template includes these defaults.
+
+| Setting | Default | Adjustment |
+|---|---|---|
+| `skill_discovery` | `on_gap` | Search only for an identified capability gap; choose `off` for offline or fixed-dependency work |
+| `skill_change_scope` | `task` | Adapt the task profile; `proposal_only` records suggestions without adoption; `maintained_skill` permits candidate edits only when actual authorization covers the maintained skill |
+| `max_skill_queries` | 2 per gap | Nonnegative integer; total external discovery queries across wakeups for the same gap; zero disables new discovery |
+| `max_skill_candidates` | 3 per gap | Positive integer; bound the number of candidates inspected in depth |
+| `max_skill_trials` | 1 per gap | Nonnegative integer; candidate revisions evaluated, not individual cases or repeats; zero leaves proposals only |
+
+Choose bounds before discovery using task value and remaining resources. Charge
+search, source review, trials and failures to the existing task accounting;
+unknown usage stays unknown. Repeated wakeups and renamed gaps do not renew
+these bounds. A changed goal or source can justify a new decision, with the
+prior evidence retained. Scope selection never grants new authority or relaxes
+acceptance. If meaningful evaluation cannot fit, defer the shared change.

@@ -33,6 +33,11 @@ working example may be better evidence than another summary.
 Use relevant available skills for literature search, hypothesis generation,
 experimental design, technical documentation or teaching. Check availability
 and scope; do not invent a tool or install a dependency just to satisfy a stage.
+When a specific capability is missing, follow
+[skill discovery](../skill-evolution.md): inspect installed choices first, then
+search only for that gap. Record why a candidate fits the actual task and what
+would establish its value. No available skill is a valid result; continue with
+supported tools or name the missing capability.
 
 Compare mechanisms, expected benefit, counterevidence, cost and a discriminating
 test. After repeated negative attempts, revisit the problem framing and baseline

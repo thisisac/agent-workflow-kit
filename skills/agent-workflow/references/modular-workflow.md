@@ -5,6 +5,11 @@ not mandatory separate agents. The same host may implement the needed work. A mo
 may call a relevant installed domain skill, but this kit does not install or
 execute third-party skills automatically.
 
+Capability discovery and workflow improvement happen inside the relevant
+research, plan or reflection module, not as another mandatory stage. Use
+[skill evolution](skill-evolution.md) for a concrete gap or verified workflow
+defect; keep normal task execution on its current tested revision.
+
 The minimal route is **plan → execute → verify** for a known cheap reversible
 action. Use **research → plan → review → execute → verify → reflect** for uncertain
 or consequential work. Research and reflection are conditional, not forms to fill

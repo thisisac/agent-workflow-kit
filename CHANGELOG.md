@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.4-alpha — 2026-11-11
+
+- Added goal-driven skill discovery and task-local adaptation for concrete capability gaps, with source/compatibility checks and bounded searches.
+- Added a workflow evolution method: diagnose the cause, isolate a candidate, compare old/new behavior and regressions, then adopt or roll back at an attempt boundary.
+- Documented settings, authorization scopes, stable active revisions and retained costs. Host tools implement discovery, edits and evaluation; the runtime has no automatic installer or hot-swap API.
+- Added five unrun behavior specifications for skill selection and evolution. Existing runtime code and interfaces are unchanged; no measured model-behavior improvement is claimed.
+
 ## 0.3.3-alpha — 2026-11-11
 
 - Reorganized both READMEs around purpose, one practical task, workflow, monitoring and integration choices; moved implementation detail into dedicated guides.

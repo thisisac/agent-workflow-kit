@@ -33,6 +33,24 @@ module. Read [parameters](references/parameters.md) when configuring effort,
 limits or execution adapters. Load domain skills only when they resolve a real
 need. Do not install dependencies just to populate the workflow.
 
+## Adapt capabilities and improve the workflow
+
+When the goal exposes a specific capability gap, check installed skills first.
+If none fits, use an available `find-skills` skill or the host's skill discovery
+tools with a bounded, abstract query. Inspect a candidate's source, scope,
+requirements and compatibility before use; a search rank is not validation.
+Reuse a suitable skill, adapt a task-local profile, or propose a small change to
+this workflow. Do not search on every wake or treat a valid negative experiment
+as proof that the skill is defective.
+
+Read [capability discovery and evolution](references/skill-evolution.md) when a
+gap or verified workflow defect warrants it. Keep the active revision stable
+during an attempt. Test candidate changes separately, compare with the existing
+version, and retain or roll back based on evidence. Shared-skill promotion needs
+authorization covering that scope and regression checks; task permission alone
+does not authorize global edits, installation or publication. Preserve the
+goal, acceptance, permissions, limits and failure history through every change.
+
 ## Design or improve
 
 A request to design a workflow does not resume jobs mentioned as background.

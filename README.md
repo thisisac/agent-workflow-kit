@@ -13,6 +13,9 @@ sessions and scheduled wakeups. Actual results guide whether to continue,
 change direction, or stop within the agreed permissions, resources, and
 acceptance criteria.
 
+The workflow can improve too: identify missing capabilities, discover relevant
+skills, and use verified lessons to adapt how later work is done.
+
 [中文](README.zh-CN.md) · [Quick start](#quick-start) · [Workflow](#workflow) · [Monitoring](#monitoring-and-continuation) · [Documentation](#documentation)
 
 ## What you can use it for
@@ -28,6 +31,7 @@ acceptance criteria.
 - **Review before committing:** assess scientific merit, feasibility and acceptance methods.
 - **Let results guide the next action:** distinguish faults, valid negative results and improvements before continuing.
 - **Resume unfinished work:** reconcile saved task records with actual execution status.
+- **Adapt capabilities to the goal:** discover and compose relevant skills, retaining workflow changes after validation.
 
 ## Quick start
 
@@ -100,6 +104,26 @@ and consequential uncertainty use the full route. Reflection should change a
 next decision; persistent non-improvement prompts a broader review while
 retaining negative evidence and spent resources.
 
+## Adapt and evolve the workflow
+
+When a specific capability is missing, check installed skills first. If needed,
+use an available `find-skills` skill or host discovery tool, then inspect the
+candidate's applicability, dependencies and permissions. A selected skill may
+handle one step or inform the task's module choices and checks.
+
+Reflection can also improve the workflow itself. Propose a narrow change from
+an observed defect, compare old/new behavior in a separate candidate version,
+check regressions, then adopt or revert. Adaptation is task-local by default;
+shared skill edits need authorization for that scope and regression evidence.
+Running attempts keep their selected revision.
+
+The agent carries out this method using discovery, installation, editing and
+evaluation tools supplied by its host. Defaults bound each capability gap to two
+discovery queries, three inspected candidates and one candidate revision trial,
+all within existing task limits. Keep the current workflow if no candidate fits
+or validation is inconclusive. See [skill evolution](skills/agent-workflow/references/skill-evolution.md)
+and [settings](skills/agent-workflow/references/parameters.md#capability-adaptation-settings).
+
 ## Monitoring and continuation
 
 **The skill guides continuation. The host supplies wakeups, job status and
@@ -153,6 +177,7 @@ and LangGraph instructions.
 | How do I connect models, executors and LangGraph? | [Python runtime guide](docs/runtime.zh-CN.md) — Chinese |
 | What are the defaults, units and tuning limits? | [Parameter reference](skills/agent-workflow/references/parameters.md) |
 | How do I design an experiment, optimization or learning task? | [Task design and examples](skills/agent-workflow/references/workflow-design.md) |
+| How do I discover skills and validate workflow changes? | [Skill discovery and evolution](skills/agent-workflow/references/skill-evolution.md) |
 | What has been verified and what remains untested? | [Validation record](evals/validation.md) |
 
 The public package contains generic implementation and synthetic examples.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Agent Workflow"
   short_description: "Research, review, and improve projects iteratively"
-  default_prompt: "Use $agent-workflow to investigate my research or project goal, build and review an evidence-based plan, execute within scope, verify results, and reflect on the next action."
+  default_prompt: "Use $agent-workflow to investigate my goal, review a plan, execute within scope, verify results, and reflect. Discover relevant skills for specific capability gaps and validate workflow improvements before adopting them."

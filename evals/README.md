@@ -1,6 +1,6 @@
 # Evaluating agent behavior
 
-This directory is a **test specification**, not a completed benchmark or an executable evaluation harness. All 29 cases are currently unrun: 22 behavior cases and 7 activation cases. Software tests in `tests/` inspect the package and synthetic reference runtime; they do not produce agent behavior scores. See [validation status](validation.md).
+This directory is a **test specification**, not a completed benchmark or an executable evaluation harness. All 34 cases are currently unrun: 27 behavior cases and 7 activation cases. Software tests in `tests/` inspect the package and synthetic reference runtime; they do not produce agent behavior scores. See [validation status](validation.md).
 
 ## Inputs and grading
 
@@ -21,9 +21,15 @@ For process/launch cases, expose controlled executor tools with recorded job ide
 
 Keep the actor's accessible workspace free of the rubric, expected answers, other runs, and the author's analysis. Do not point it at this whole repository. Copy only the exact skill version and the selected raw artifacts. Prompts that explicitly state the hazard are useful smoke cases; add held-out variants where the agent must discover the conflict in evidence before claiming generalization.
 
+The capability/evolution cases need controlled discovery and source reads, editable
+synthetic candidate skill copies, revision-bound active-attempt records and
+action-based old/new evaluators. Materialize the supplied scenarios and log
+queries, candidate selection, edits, evaluation and adoption order. A record
+claiming an active revision is not a live hot-swap test; report that limitation.
+
 ## Preserve the real entrypoint
 
-For **behavior** tests, explicitly load the intended skill bytes and provide the selected request. For **activation** tests, expose the skill through the host's normal discovery mechanism without naming it in the request; record the host's selection trace. An explicitly invoked skill cannot establish discovery accuracy. The six activation cases are a starter set, not enough to optimize a description reliably.
+For **behavior** tests, explicitly load the intended skill bytes and provide the selected request. For **activation** tests, expose the skill through the host's normal discovery mechanism without naming it in the request; record the host's selection trace. An explicitly invoked skill cannot establish discovery accuracy. The seven activation cases are a starter set, not enough to optimize a description reliably.
 
 A scheduled case should use the host's actual scheduled/standing-instruction framing. Do not simply prefix a direct user request with “scheduled” and claim equivalent coverage. When only simulated entrypoints are available, record that limitation. Keep the unchanged scheduled-check case separate from the direct status question: silence appropriate for a monitor must not suppress an answer to a user.
 

@@ -481,5 +481,46 @@
     ],
     "blueprint_generator": "Read for comparison, not applied: its Copilot documentation tree is not present in this repository",
     "private_material": "No user project code or operational data used"
+  },
+  "skill_evolution_review": {
+    "checked_date": "2026-11-11",
+    "method": "skills.sh leaderboard and one Skills CLI discovery query; fixed-commit source review; no candidate skill installed or executed",
+    "query": "skill evaluation",
+    "sources": [
+      {
+        "repository": "vercel-labs/skills",
+        "stars_observed": 38910,
+        "commit": "e781cb4d07433dfe1d19e924ed45cc61738c55ec",
+        "path": "skills/find-skills/SKILL.md",
+        "url": "https://raw.githubusercontent.com/vercel-labs/skills/e781cb4d07433dfe1d19e924ed45cc61738c55ec/skills/find-skills/SKILL.md",
+        "bytes": 5472,
+        "sha256": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f"
+      },
+      {
+        "repository": "anthropics/skills",
+        "stars_observed": 192611,
+        "commit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+        "path": "skills/skill-creator/SKILL.md",
+        "url": "https://raw.githubusercontent.com/anthropics/skills/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/skill-creator/SKILL.md",
+        "bytes": 33168,
+        "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf"
+      },
+      {
+        "repository": "dotnet/skills",
+        "stars_observed": 5905,
+        "commit": "96c3d68dad2855e3ab5178aa1a262789d86a1466",
+        "path": ".agents/skills/improve-skill-quality/SKILL.md",
+        "url": "https://raw.githubusercontent.com/dotnet/skills/96c3d68dad2855e3ab5178aa1a262789d86a1466/.agents/skills/improve-skill-quality/SKILL.md",
+        "bytes": 14524,
+        "sha256": "553530b3d7028c15e69119a053b09975d25598857a8ce6032302a72ff5a6c33e"
+      }
+    ],
+    "decisions": [
+      "Discover skills for specific capability gaps; inspect fit and actual source rather than rank alone.",
+      "Compare a candidate against the prior skill and inspect actual actions, regressions and uncertainty.",
+      "Classify fixture, tool, evaluation and skill-content defects before rewriting instructions.",
+      "Keep workflow changes task-local by default; scope, validation and resource accounting survive promotion or rollback."
+    ],
+    "scope": "Design comparison only; no upstream evaluation harness or workflow code reused."
   }
 }

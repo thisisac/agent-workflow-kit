@@ -1,8 +1,30 @@
-# Validation status — 0.3.3-alpha
+# Validation status — 0.3.4-alpha
 
 Checked on 2026-11-11 on Linux with Python 3.11. These are software and synthetic runtime results, not agent-quality or scientific-performance scores.
 
-The 0.3.3 update changes human-facing documentation only. Runtime code, skill instructions and behavior specifications are unchanged from 0.3.2. Prior software checks do not establish model behavior or a deployed host integration. The 29 behavior/activation specifications remain unrun.
+The 0.3.4 update adds skill-discovery and workflow-evolution instructions,
+references, host-neutral settings and five behavior specifications. Runtime code
+and interfaces are unchanged. All 34 model behavior/activation specifications
+remain unrun: 27 behavior and 7 activation cases. No autonomous self-improvement,
+new/old skill advantage or domain-performance gain has been measured.
+
+## Rechecked for 0.3.4
+
+| Check | Observed result |
+|---|---|
+| Skill metadata validator | Skill accepted |
+| Release/packaging suite | 14 tests passed, including installed-reference containment and prompt/rubric pairing |
+| Full software suite with optional LangGraph | 48 tests passed, no skips; these exercise synthetic runtime behavior, not model-driven evolution |
+| Public privacy and packaged-link checks | 61 source files, 0 reported errors, including the external private-term list |
+| Discovery/source review | Public directory plus one CLI query; exact source snapshots reviewed for find-skills, skill-creator and improve-skill-quality; metadata in research/sources.json |
+| Evolution behavior cases | Five new specifications; not executed against a model |
+
+The host supplies skill discovery, installation, editing, evaluation and
+revision selection. The reference engine does not enforce the new instruction
+settings or provide a hot-swap/promotion API. A retained revision requires the
+host to bind actual immutable skill bytes; a statement in a record is not an
+implemented version lock. Candidate behavior must be evaluated in isolation
+before claiming an improved shared skill.
 
 ## Rechecked for 0.3.3
 
@@ -55,7 +77,7 @@ Installation and CLI checks used disposable synthetic workspaces. They did not i
 | Public release checks | 59 source files, 0 reported errors; personal-path/email/key/token patterns and an external private-term list checked against names and contents |
 | Original release tests | Allowlist, per-file manifest hashes, sensitive-pattern rejection, symlinks, invalid files/links, and same-source byte reproducibility passed |
 
-The release ZIP adds one generated manifest to 60 public source files, for 61 members. The checked source snapshot includes the original reference-runtime implementation, module references and tests. Third-party source snapshots, dependency environments, private-term lists, local field observations, actual run databases, logs, models and datasets are excluded.
+The 0.3.4 release ZIP adds one generated manifest to 61 public source files, for 62 members. The checked source snapshot includes the original reference-runtime implementation, module references and tests. Third-party source snapshots, dependency environments, private-term lists, local field observations, actual run databases, logs, models and datasets are excluded.
 
 The main synthetic text demo is deliberately scripted: two case-only attempts fail a fixed check, then strip-and-case passes. It validates routing, persistence, policy and handoffs; it does not show an LLM independently discovered the pivot. The routine demo chooses the known passing transformation immediately; this is also scripted. The paired routing test uses the same passing plan, output hash and acceptance checks for both effort levels. It measures callback counts, not elapsed-time/token savings or model decision quality. The reasoning bridge test likewise checks the integration contract, not reasoning quality.
 
@@ -66,8 +88,8 @@ The main synthetic text demo is deliberately scripted: two case-only attempts fa
 - No Deep Agents connector, real asynchronous queue, distributed lock, cloud job, scheduler, or notification delivery was tested. LangGraph routes actual nodes; SQLite is the reference runtime's single persistence authority.
 - Python reasoning callbacks are not preempted by the engine. Providers need their own hard timeout. The POSIX command adapter limits its process group and retained stdout/stderr, not arbitrary files, detached processes, memory, GPU or network usage.
 - Pause blocks future modules; active work requires native executor cancellation. Reconciliation is a trusted host operation and must not be called while an old worker could still run.
-- Local Linux tests do not establish Windows behavior. The configured GitHub CI includes a base OS matrix and a separate optional LangGraph job, but hosted CI has not run.
-- No real user project was read or modified for this implementation, no private workflow was restarted, and no external publication or scheduler change occurred.
+- Local Linux tests do not establish Windows behavior. The published 0.3.3 source passed Linux, Windows and optional LangGraph hosted CI at commit `e214d7a18422cc3525361377e4a1920d5a6c1750`. This does not establish behavior of model-driven workflow evolution.
+- No real user project or data is included in this implementation, and no private workflow or scheduler was restarted. The reviewed public package was published separately; that publication is not a workflow-efficacy test.
 - Pattern/literal scans and review do not prove the absence of every possible sensitive meaning. Inspect final release members before sharing.
 
 Earlier permitted private field retrospectives remain design context only, outside this distribution. This version's new code and synthetic fixtures were authored independently. It does not redistribute upstream implementation source.

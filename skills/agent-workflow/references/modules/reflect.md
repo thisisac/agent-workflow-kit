@@ -28,9 +28,12 @@ accumulating overlapping rules.
 
 The optional runtime `lesson` has `statement`, `why_reusable` and saved `evidence`.
 Its current view keeps only eight recent unique statements; the event ledger
-retains their provenance. Model-written lessons still need human/domain review
-before promotion into shared skills. They must never include private records in
-a public package.
+retains their provenance. A reusable workflow defect or capability gap can open
+the [skill evolution loop](../skill-evolution.md). Distinguish a domain hypothesis
+that failed from an instruction, tool or evaluation defect before changing the
+workflow. Shared changes need scoped authorization, domain-appropriate review
+and old/new regression evidence. Keep a task-specific lesson local when that
+evidence is missing. Never include private records in a public package.
 
 For a routine task that passes every acceptance check, finish without requiring
 a reflection call or a lesson. In other cases reflect before another attempt.
