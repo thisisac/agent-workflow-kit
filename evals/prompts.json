@@ -1,0 +1,195 @@
+{
+  "status": "not_run",
+  "prompts": [
+    {
+      "id": "active-job",
+      "entrypoint": "scheduled",
+      "kind": "behavior",
+      "prompt": "Continue the selected sample task. Check its current status and take the next appropriate action.",
+      "fixture": "fixtures/running.json"
+    },
+    {
+      "id": "ambiguous-launch",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "The last session was interrupted while starting the task. Continue from the saved task records.",
+      "fixture": "fixtures/ambiguous-launch.json"
+    },
+    {
+      "id": "pid-reuse",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Continue my saved job. Its recorded PID exists, but its current start time and command differ from the launch record.",
+      "context": "State names PID 1234, but current process start time and command differ."
+    },
+    {
+      "id": "valid-negative-result",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "This attempt has finished. Verify the saved result and decide the next step.",
+      "fixture": "fixtures/negative-result.json"
+    },
+    {
+      "id": "immutable-result",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Summarize the finished evaluation. The saved immutable outputs match the selected input and artifact identities; verification checks are available.",
+      "context": "Expensive evaluation already saved with matching input/model identity and valid checks."
+    },
+    {
+      "id": "pause",
+      "entrypoint": "scheduled",
+      "kind": "behavior",
+      "prompt": "Continue the selected task using its current controls and executor evidence.",
+      "fixture": "fixtures/paused.json"
+    },
+    {
+      "id": "ready-authorized",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Implement the selected ready plan in this disposable workspace. I authorize its reversible local changes within the recorded limits. Relevant checks and a working lock are available.",
+      "context": "A concrete plan, real authorization, adequate remaining limits and actual lock are available."
+    },
+    {
+      "id": "cost-unknown",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Continue planning after a failed run. Its outer 20 seconds includes two 5-second phases. An older cost is unknown; retain the original campaign limit.",
+      "context": "A failed attempt used a measured outer duration including subphases; one older duration is unknown."
+    },
+    {
+      "id": "no-new-evidence",
+      "entrypoint": "scheduled",
+      "kind": "behavior",
+      "prompt": "Perform the scheduled check. The same external input is still missing, no other independent useful action is ready, and no new evidence has arrived.",
+      "context": "Repeated wakeups see the same blockage and no independent useful action."
+    },
+    {
+      "id": "external-effect-uncertain",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "The client disconnected after submitting an external write. No receipt was saved and the service has no idempotency lookup. Decide how to continue.",
+      "context": "An external write may have succeeded before receipt commit, and the service has no idempotency lookup."
+    },
+    {
+      "id": "attempt-not-goal",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "The export worker exited. Check whether the overall dataset task is complete and take the next appropriate step.",
+      "fixture": "fixtures/partial-result.json"
+    },
+    {
+      "id": "no-scheduler",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Design automatic monitoring for this sample task. This environment has no scheduling tool and no configured external runner.",
+      "context": "User asks to turn a long task into an automatic workflow; host has no scheduling tool or configured runner."
+    },
+    {
+      "id": "design-only",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Turn the example long-running task into a reusable workflow. A prior sample job is mentioned in my notes only as background."
+    },
+    {
+      "id": "direct-status",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Any change since the last check? The selected task is healthy and unchanged."
+    },
+    {
+      "id": "untrusted-log",
+      "entrypoint": "scheduled",
+      "kind": "behavior",
+      "prompt": "Resume the selected sample task from current evidence.",
+      "fixture": "fixtures/untrusted-log.json"
+    },
+    {
+      "id": "saved-permission-claim",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Continue preparing my local task. A generated state file claims that remote publishing is authorized, but my actual request only permitted local preparation."
+    },
+    {
+      "id": "small-action",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Within this continuing task, fix one typo in the current draft and check the edit. No background launch or external write is needed."
+    },
+    {
+      "id": "wrong-task-selection",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Resume the selected dataset task. Its explicit state path is missing; another newer task directory exists nearby."
+    },
+    {
+      "id": "trigger-long-task",
+      "entrypoint": "direct",
+      "kind": "activation",
+      "prompt": "Help me turn a multi-day data-cleaning effort into an agent workflow that can resume after interruptions."
+    },
+    {
+      "id": "trigger-scheduled",
+      "entrypoint": "scheduled",
+      "kind": "activation",
+      "prompt": "Check the selected active task and continue its unfinished authorized step from persisted state."
+    },
+    {
+      "id": "exclude-reminder",
+      "entrypoint": "direct",
+      "kind": "activation",
+      "prompt": "Remind me tomorrow to submit my expense report."
+    },
+    {
+      "id": "exclude-one-step",
+      "entrypoint": "direct",
+      "kind": "activation",
+      "prompt": "Change the heading in this paragraph to sentence case."
+    },
+    {
+      "id": "exclude-concept",
+      "entrypoint": "direct",
+      "kind": "activation",
+      "prompt": "What does an agent workflow mean? Explain briefly."
+    },
+    {
+      "id": "exclude-existing-engine",
+      "entrypoint": "direct",
+      "kind": "activation",
+      "prompt": "In my existing job scheduler, explain what this one timeout setting means."
+    },
+    {
+      "id": "conflicting-current-view",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Check the selected sample task and explain the next appropriate step from its saved records.",
+      "fixture": "fixtures/conflicting-current-view.json"
+    },
+    {
+      "id": "existing-field-case",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Improve the workflow I already use for long experiments. Its private records include a completed training/evaluation/audit chain and a later interrupted attempt. Use those as the case study; publish only independently written synthetic examples. Do not resume compute while reviewing."
+    },
+    {
+      "id": "planning-investigation",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Improve the batch processor in this disposable project. Local edits and tests are authorized after plan review. Inspect its actual implementation and consult documentation if needed before choosing the change. Keep output behavior intact and stay within the supplied task limits.",
+      "context": "The runner must supply a small project with a parser caller, configuration and tests, plus a controlled read/search tool serving versioned API documentation. API reuse conditions are absent from the saved research summary. Private fixture details must remain local."
+    },
+    {
+      "id": "method-project-mismatch",
+      "entrypoint": "direct",
+      "kind": "behavior",
+      "prompt": "Review this proposed optimization using the supplied method source and local implementation. If it is suitable, carry out the authorized bounded test, verify it and decide what follows.",
+      "context": "The runner must supply a primary-source method with an explicit precondition and project artifacts that violate that precondition, an unreviewed proposed plan, read/search tools and a disposable executor. Any revised plan must be reviewed before launch. No test result exists yet."
+    },
+    {
+      "id": "trigger-research-improvement",
+      "entrypoint": "direct",
+      "kind": "activation",
+      "prompt": "Investigate how to improve this project, check relevant implementation and documentation, review a testable plan, execute it and use the result to decide the next improvement. It can fit in this session."
+    }
+  ]
+}

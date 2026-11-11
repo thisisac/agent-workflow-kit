@@ -1,0 +1,35 @@
+{
+  "task": {
+    "task_id": "sample-task",
+    "goal": "Improve a fixed synthetic benchmark score.",
+    "authorization_source": "the evaluation user message only",
+    "acceptance": [
+      "Use the declared benchmark and fixed inputs, retain verified output, and claim improvement only if the score exceeds baseline."
+    ]
+  },
+  "state": {
+    "task_id": "sample-task",
+    "phase": "VERIFY",
+    "active_attempt": "attempt-001"
+  },
+  "controls": {
+    "paused": false,
+    "stopped": false
+  },
+  "executor": {
+    "job_id": "synthetic-job-001",
+    "status": "exited",
+    "command_identity": "sample-worker-v1",
+    "start_identity": "synthetic-start-001"
+  },
+  "synthetic": true,
+  "verification": {
+    "checks_valid": true,
+    "input_identity": "sample-input-v1",
+    "fixed_metric": {
+      "baseline": 0.71,
+      "attempt": 0.69
+    },
+    "metric_direction": "higher_is_better"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "task_id": "example-task",
+  "revision": 0,
+  "phase": "PLAN",
+  "active_attempt": null,
+  "last_event_id": null,
+  "last_material_progress_at": null,
+  "next_action": "Complete contract and identify real authorization/evidence sources.",
+  "wake_condition": null,
+  "next_check_at": null,
+  "verified_outcome": null,
+  "blocker": null,
+  "notification": {
+    "last_key": null,
+    "delivery_state": "none"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "synthetic": true,
+  "selected_task": "sample-task",
+  "pointer": {
+    "active_attempt": "sample-current",
+    "status": "running",
+    "next_action": "Training is active."
+  },
+  "current_executor": {
+    "attempt_id": "sample-current",
+    "stage": "stopped_for_diagnosis",
+    "driver_exited": true,
+    "process_observation": "absent",
+    "original_error_location": null,
+    "charged_worker_seconds": 73
+  },
+  "current_nextstatus": {
+    "attempt_id": "sample-current",
+    "next_action": "Inspect saved failure evidence."
+  },
+  "historical_observation": {
+    "attempt_id": "sample-older",
+    "additional_compute_allowed": true,
+    "remaining_seconds": 200
+  },
+  "original_records_immutable": true
+}

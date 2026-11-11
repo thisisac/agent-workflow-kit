@@ -1,0 +1,20 @@
+{
+  "status": "not_run",
+  "skill_version": null,
+  "skill_content_sha256": null,
+  "model": null,
+  "host": null,
+  "case_id": null,
+  "entrypoint": null,
+  "arm": null,
+  "repetition": null,
+  "input_fixture_sha256": null,
+  "trace_reference": null,
+  "artifact_references": [],
+  "criteria": [],
+  "critical_failures": null,
+  "time_seconds": null,
+  "tokens": null,
+  "cost": null,
+  "reviewer_notes": null
+}

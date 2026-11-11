@@ -1,0 +1,26 @@
+{
+  "task": {
+    "task_id": "sample-task",
+    "goal": "Produce a verified synthetic dataset export.",
+    "authorization_source": "the evaluation user message only",
+    "acceptance": [
+      "Every declared partition appears once in the manifest."
+    ]
+  },
+  "state": {
+    "task_id": "sample-task",
+    "phase": "RUNNING",
+    "active_attempt": "attempt-001"
+  },
+  "controls": {
+    "paused": false,
+    "stopped": false
+  },
+  "executor": {
+    "job_id": "synthetic-job-001",
+    "status": "running",
+    "command_identity": "sample-worker-v1",
+    "start_identity": "synthetic-start-001"
+  },
+  "synthetic": true
+}

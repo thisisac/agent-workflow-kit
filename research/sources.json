@@ -1,0 +1,485 @@
+{
+  "checked_date": "2026-11-10",
+  "method": "skills.sh leaderboard, npx skills find, GitHub API metadata and fixed-commit raw source inspection; no installation or execution of third-party workflows",
+  "repositories": [
+    {
+      "repo": "EveryInc/compound-engineering-plugin",
+      "checked_at_utc": "2026-11-10T07:17:50.910155+00:00",
+      "html_url": "https://github.com/EveryInc/compound-engineering-plugin",
+      "stargazers_count": 26006,
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "description": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
+      "commit": "dd9b7921c9c80498eba84994ff1b8e1e81dbc1db"
+    },
+    {
+      "repo": "NVIDIA/skills",
+      "checked_at_utc": "2026-11-10T07:17:50.910344+00:00",
+      "html_url": "https://github.com/NVIDIA/skills",
+      "stargazers_count": 3917,
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "description": "Agent Skills for NVIDIA products — install into Claude Code, Codex, and other coding agents to run Physical AI, robotics, simulation, CUDA, and RAG workflows end to end.",
+      "commit": "24ede5ba251d461cae5f8507de0fbaeceea8af3e"
+    },
+    {
+      "repo": "anthropics/claude-plugins-official",
+      "checked_at_utc": "2026-11-10T07:17:50.910518+00:00",
+      "html_url": "https://github.com/anthropics/claude-plugins-official",
+      "stargazers_count": 46680,
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "commit": "dceb15d50832e6adf380bedc26dde03d251324b9"
+    },
+    {
+      "repo": "karpathy/autoresearch",
+      "checked_at_utc": "2026-11-10T07:17:55.211439+00:00",
+      "html_url": "https://github.com/karpathy/autoresearch",
+      "stargazers_count": 99713,
+      "default_branch": "master",
+      "archived": false,
+      "license": null,
+      "description": "AI agents running research on single-GPU nanochat training automatically",
+      "commit": "228791fb499afffb54b46200aca536f79142f117"
+    },
+    {
+      "repo": "langchain-ai/langgraph",
+      "checked_at_utc": "2026-11-10T07:17:58.405976+00:00",
+      "html_url": "https://github.com/langchain-ai/langgraph",
+      "stargazers_count": 44726,
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "description": "Build resilient agents.",
+      "commit": "e5e37b5d70dbfd93c7006bd90a658c6179a95946"
+    },
+    {
+      "repo": "obra/superpowers",
+      "checked_at_utc": "2026-11-10T07:17:50.909750+00:00",
+      "html_url": "https://github.com/obra/superpowers",
+      "stargazers_count": 315305,
+      "default_branch": "main",
+      "archived": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "description": "An agentic skills framework & software development methodology that works.",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7"
+    },
+    {
+      "repo": "othmanadi/planning-with-files",
+      "checked_at_utc": "2026-11-10T07:17:50.908710+00:00",
+      "html_url": "https://github.com/OthmanAdi/planning-with-files",
+      "stargazers_count": 27978,
+      "default_branch": "master",
+      "archived": false,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "description": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx skills. Codex, Cursor, OpenCode, 60+ agents.",
+      "commit": "2362ca385ad74f061aa0e7b73f56543a4b7e6df2"
+    },
+    {
+      "html_url": "https://github.com/anthropics/skills",
+      "stargazers_count": 191456,
+      "default_branch": "main",
+      "license": null,
+      "description": "Public repository for Agent Skills",
+      "repo": "anthropics/skills",
+      "commit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579"
+    }
+  ],
+  "files": [
+    {
+      "repo": "EveryInc/compound-engineering-plugin",
+      "path": "docs/solutions/skill-design/callee-skill-evals-need-caller-shaped-tasks.md",
+      "commit": "dd9b7921c9c80498eba84994ff1b8e1e81dbc1db",
+      "url": "https://raw.githubusercontent.com/EveryInc/compound-engineering-plugin/dd9b7921c9c80498eba84994ff1b8e1e81dbc1db/docs/solutions/skill-design/callee-skill-evals-need-caller-shaped-tasks.md",
+      "review": "quality-benchmark",
+      "bytes": 5542,
+      "sha256": "5ce76c92d31aeb351186c497e94713ae580134aba51cb81820e963a914e5d114"
+    },
+    {
+      "repo": "EveryInc/compound-engineering-plugin",
+      "path": "docs/solutions/skill-design/paired-old-vs-new-injection-skill-evals.md",
+      "commit": "dd9b7921c9c80498eba84994ff1b8e1e81dbc1db",
+      "url": "https://raw.githubusercontent.com/EveryInc/compound-engineering-plugin/dd9b7921c9c80498eba84994ff1b8e1e81dbc1db/docs/solutions/skill-design/paired-old-vs-new-injection-skill-evals.md",
+      "review": "quality-benchmark",
+      "bytes": 18057,
+      "sha256": "e79e7f4de60e2a4d0f66617d319960fce72e1437a843ac0e689ef015276aae37"
+    },
+    {
+      "repo": "EveryInc/compound-engineering-plugin",
+      "path": "docs/solutions/skill-design/right-size-plans-by-subtraction-and-a-usage-first-sizing-test.md",
+      "commit": "dd9b7921c9c80498eba84994ff1b8e1e81dbc1db",
+      "url": "https://raw.githubusercontent.com/EveryInc/compound-engineering-plugin/dd9b7921c9c80498eba84994ff1b8e1e81dbc1db/docs/solutions/skill-design/right-size-plans-by-subtraction-and-a-usage-first-sizing-test.md",
+      "review": "quality-benchmark",
+      "bytes": 16162,
+      "sha256": "156bcd0d483a76f1a3af09bdeabcecfc508769e5c9a9ebd46762facb21c28095"
+    },
+    {
+      "repo": "EveryInc/compound-engineering-plugin",
+      "path": "skills/ce-compound/SKILL.md",
+      "commit": "dd9b7921c9c80498eba84994ff1b8e1e81dbc1db",
+      "url": "https://raw.githubusercontent.com/EveryInc/compound-engineering-plugin/dd9b7921c9c80498eba84994ff1b8e1e81dbc1db/skills/ce-compound/SKILL.md",
+      "bytes": 7825,
+      "sha256": "a88e1d140e487415e8e0f041bba9d424f1149f03c404ede604a9359fafac3655"
+    },
+    {
+      "repo": "EveryInc/compound-engineering-plugin",
+      "path": "skills/lfg/SKILL.md",
+      "commit": "dd9b7921c9c80498eba84994ff1b8e1e81dbc1db",
+      "url": "https://raw.githubusercontent.com/EveryInc/compound-engineering-plugin/dd9b7921c9c80498eba84994ff1b8e1e81dbc1db/skills/lfg/SKILL.md",
+      "bytes": 7933,
+      "sha256": "bf6a810aa5b4e06016058666943f7fd8cb830d62c272a73a6b46be74d4a646c1"
+    },
+    {
+      "repo": "NVIDIA/skills",
+      "path": "skills/nemo-rl-auto-research/SKILL.md",
+      "commit": "24ede5ba251d461cae5f8507de0fbaeceea8af3e",
+      "url": "https://raw.githubusercontent.com/NVIDIA/skills/24ede5ba251d461cae5f8507de0fbaeceea8af3e/skills/nemo-rl-auto-research/SKILL.md",
+      "bytes": 9168,
+      "sha256": "5d79495dfc7dda03ba5b8567b7213acf659d07374608f711d60e959d28bb5ffc"
+    },
+    {
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/ralph-loop/commands/help.md",
+      "commit": "dceb15d50832e6adf380bedc26dde03d251324b9",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/dceb15d50832e6adf380bedc26dde03d251324b9/plugins/ralph-loop/commands/help.md",
+      "bytes": 3227,
+      "sha256": "51bbd57d6edf8f50fb1273ed006da29e5322338d537f4153fbd66430b6e118c3"
+    },
+    {
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/ralph-loop/hooks/stop-hook.sh",
+      "commit": "dceb15d50832e6adf380bedc26dde03d251324b9",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/dceb15d50832e6adf380bedc26dde03d251324b9/plugins/ralph-loop/hooks/stop-hook.sh",
+      "bytes": 7533,
+      "sha256": "13c547e77956e44f6af41d1be140f55da0e1ee3c55a540b530f48ee7c7ba9a11"
+    },
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "commit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "url": "https://raw.githubusercontent.com/anthropics/skills/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/skill-creator/SKILL.md",
+      "review": "quality-benchmark",
+      "bytes": 33168,
+      "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf"
+    },
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/references/schemas.md",
+      "commit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "url": "https://raw.githubusercontent.com/anthropics/skills/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/skill-creator/references/schemas.md",
+      "review": "quality-benchmark",
+      "bytes": 12061,
+      "sha256": "8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f"
+    },
+    {
+      "repo": "karpathy/autoresearch",
+      "path": "README.md",
+      "commit": "228791fb499afffb54b46200aca536f79142f117",
+      "url": "https://raw.githubusercontent.com/karpathy/autoresearch/228791fb499afffb54b46200aca536f79142f117/README.md",
+      "bytes": 8039,
+      "sha256": "3958fd4195ac2f98ed35c4eaa4f3028a335165ee24945e96426c408d25793a41"
+    },
+    {
+      "repo": "karpathy/autoresearch",
+      "path": "program.md",
+      "commit": "228791fb499afffb54b46200aca536f79142f117",
+      "url": "https://raw.githubusercontent.com/karpathy/autoresearch/228791fb499afffb54b46200aca536f79142f117/program.md",
+      "bytes": 7039,
+      "sha256": "86cf987a5c381e46eefe0d0a82765223fd766d8d7acdc2afacfbbce15ecacece"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/testing.md",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "url": "https://raw.githubusercontent.com/obra/superpowers/22f0b463e7a5e579904dd6211a520321035526f7/docs/testing.md",
+      "review": "quality-benchmark",
+      "bytes": 3045,
+      "sha256": "2959880663be4abecbcf11331e64e435cfadffae2c9e2fb24eb5509224f51f30"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/executing-plans/SKILL.md",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "url": "https://raw.githubusercontent.com/obra/superpowers/22f0b463e7a5e579904dd6211a520321035526f7/skills/executing-plans/SKILL.md",
+      "bytes": 18364,
+      "sha256": "deaf176fa179827e80f2ea3101db3ea90fdf562ebef340eba761e4687940f5f5"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/verification-before-completion/SKILL.md",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "url": "https://raw.githubusercontent.com/obra/superpowers/22f0b463e7a5e579904dd6211a520321035526f7/skills/verification-before-completion/SKILL.md",
+      "bytes": 3646,
+      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/writing-skills/SKILL.md",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "url": "https://raw.githubusercontent.com/obra/superpowers/22f0b463e7a5e579904dd6211a520321035526f7/skills/writing-skills/SKILL.md",
+      "review": "quality-benchmark",
+      "bytes": 16738,
+      "sha256": "8cb3ac68c6d8c4bb46886b998b09af7989643cab8bd0e46ee86dd62e64546bbe"
+    },
+    {
+      "repo": "othmanadi/planning-with-files",
+      "path": ".github/workflows/tests.yml",
+      "commit": "2362ca385ad74f061aa0e7b73f56543a4b7e6df2",
+      "url": "https://raw.githubusercontent.com/othmanadi/planning-with-files/2362ca385ad74f061aa0e7b73f56543a4b7e6df2/.github/workflows/tests.yml",
+      "review": "quality-benchmark",
+      "bytes": 3743,
+      "sha256": "9752c33a816e346424f4f066a63c8b3da30a7be20b3583b06f51ed3f41f91348"
+    },
+    {
+      "repo": "othmanadi/planning-with-files",
+      "path": "docs/evals.md",
+      "commit": "2362ca385ad74f061aa0e7b73f56543a4b7e6df2",
+      "url": "https://raw.githubusercontent.com/othmanadi/planning-with-files/2362ca385ad74f061aa0e7b73f56543a4b7e6df2/docs/evals.md",
+      "review": "quality-benchmark",
+      "bytes": 25235,
+      "sha256": "f5eb46cadab62a3c6919376bc0494aaa4e487dc30baadc36543c8c71b660aa0e"
+    },
+    {
+      "repo": "othmanadi/planning-with-files",
+      "path": "skills/planning-with-files/SKILL.md",
+      "commit": "2362ca385ad74f061aa0e7b73f56543a4b7e6df2",
+      "url": "https://raw.githubusercontent.com/othmanadi/planning-with-files/2362ca385ad74f061aa0e7b73f56543a4b7e6df2/skills/planning-with-files/SKILL.md",
+      "bytes": 41800,
+      "sha256": "45c25f71fe5e54b1bf514368df96d956fcd32da1e9725a788705d5c1a2ab9ca5"
+    }
+  ],
+  "cli_queries": [
+    "planning with files",
+    "autonomous workflow",
+    "verification reflection",
+    "verification-before-completion",
+    "compound-engineering"
+  ],
+  "observed_skill_installs": {
+    "othmanadi/planning-with-files@planning-with-files": "48.5K",
+    "obra/superpowers@verification-before-completion": "270.4K",
+    "everyinc/compound-engineering-plugin@ce-compound": "3.8K",
+    "everyinc/compound-engineering-plugin@lfg": "3.6K",
+    "nvidia/skills@nemo-rl-auto-research": "1.9K"
+  },
+  "official_docs": [
+    "https://developers.openai.com/plugins/build/skills",
+    "https://learn.chatgpt.com/docs/automations?surface=app",
+    "https://docs.langchain.com/oss/python/langgraph/persistence"
+  ],
+  "limitations": [
+    "Search metrics vary and do not establish quality.",
+    "Only listed files read; referenced dependency trees and installed behavior not audited.",
+    "NVIDIA skills.sh page open failed; CLI count and pinned raw source succeeded.",
+    "No third-party runtime, install, or production automation was executed or changed."
+  ],
+  "quality_review": {
+    "date": "2026-11-10",
+    "scope": "Targeted authoring, evaluation and maintenance documents; not an exhaustive code audit.",
+    "applied_authoring_skill": "Environment-provided skill-creator; no host-specific source path distributed.",
+    "upstream_skill_creator": "Pinned Anthropic skill-creator read as reference material, not installed.",
+    "behavior_evaluation": "Not run; prompt/rubric inventory and method only.",
+    "third_party_sources_redistributed": false
+  },
+  "runtime_update": {
+    "date": "2026-11-11",
+    "implementation": "Original seven-stage runtime, not copied upstream source",
+    "influences": [
+      "Persistent cross-session plans: Planning with Files",
+      "Selective durable learning: Compound Engineering"
+    ],
+    "official_docs_reviewed": [
+      "https://docs.langchain.com/oss/python/langgraph/graph-api",
+      "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "https://docs.langchain.com/oss/python/deepagents/overview"
+    ],
+    "tested_optional_runtime": "langgraph==1.2.20",
+    "deep_agents_connector": "Not implemented or tested",
+    "agent_efficacy": "Not measured; tests use synthetic callbacks"
+  },
+  "simplification_review": {
+    "date": "2026-11-11",
+    "discovery": "skills.sh leaderboard then skills find simplify and first-principles",
+    "source_metadata": [
+      {
+        "repo": "cursor/plugins",
+        "stars": 15977,
+        "commit": "246bc508c139c5e036dfafea8978d31a7433279f",
+        "path": "harness/pstack/claude-code/skills/principle-redesign-from-first-principles/SKILL.md",
+        "url": "https://raw.githubusercontent.com/cursor/plugins/246bc508c139c5e036dfafea8978d31a7433279f/harness/pstack/claude-code/skills/principle-redesign-from-first-principles/SKILL.md",
+        "bytes": 758,
+        "sha256": "170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034"
+      },
+      {
+        "repo": "EveryInc/compound-engineering-plugin",
+        "stars": 26020,
+        "commit": "40580d82f1a0c5c275ba5c56c85b8c183ab7fe91",
+        "path": "skills/ce-simplify-code/SKILL.md",
+        "url": "https://raw.githubusercontent.com/EveryInc/compound-engineering-plugin/40580d82f1a0c5c275ba5c56c85b8c183ab7fe91/skills/ce-simplify-code/SKILL.md",
+        "bytes": 7808,
+        "sha256": "391b434b9dd42c10e2ff7d56828bd40b9fff4f412237ecab7ebccd41af49a7ca"
+      }
+    ],
+    "observed_installs": {
+      "cursor/plugins@principle-redesign-from-first-principles": "5K",
+      "everyinc/compound-engineering-plugin@ce-simplify-code": "3.6K"
+    },
+    "decisions": [
+      "Optional routine route; deliberate remains default",
+      "Continuation merged into reflection transaction",
+      "Research reused for continue, reopened for pivot",
+      "Directory traversal only at launch",
+      "Source code simplifier reviewed for code scope only, not applied to prose"
+    ],
+    "limitations": [
+      "No third-party skills installed or bundled",
+      "No independent model behavior evaluation or measured token savings",
+      "brianlovin/agent-config metadata request returned HTTP 404; not recommended as verified source"
+    ]
+  },
+  "readme_review": {
+    "date": "2026-11-11",
+    "applied_skills": [
+      "github/awesome-copilot@create-readme",
+      "Environment-provided skill-creator",
+      "Environment-provided write-concisely"
+    ],
+    "discovery_queries": [
+      "readme --owner obra",
+      "github readme"
+    ],
+    "observed_installs": {
+      "github/awesome-copilot@create-readme": "19.5K",
+      "github/awesome-copilot@readme-blueprint-generator": "9.7K"
+    },
+    "sources": [
+      {
+        "repo": "github/awesome-copilot",
+        "stars": 41030,
+        "commit": "90502742406e2e9893099f73d5b8f8d3c7abf539",
+        "path": "skills/create-readme/SKILL.md",
+        "url": "https://raw.githubusercontent.com/github/awesome-copilot/90502742406e2e9893099f73d5b8f8d3c7abf539/skills/create-readme/SKILL.md",
+        "bytes": 1331,
+        "sha256": "a93f9161bef324e3a1550fc79d4f01b660a3fb7eadc4455677d9ace4da2965ac"
+      },
+      {
+        "repo": "github/awesome-copilot",
+        "stars": 41030,
+        "commit": "90502742406e2e9893099f73d5b8f8d3c7abf539",
+        "path": "skills/readme-blueprint-generator/SKILL.md",
+        "url": "https://raw.githubusercontent.com/github/awesome-copilot/90502742406e2e9893099f73d5b8f8d3c7abf539/skills/readme-blueprint-generator/SKILL.md",
+        "bytes": 2914,
+        "sha256": "571094038e74bd3de56356f67d1e73af69afc4ce63f886c2b047f351b85a3183"
+      },
+      {
+        "repo": "EveryInc/compound-engineering-plugin",
+        "stars": 26020,
+        "commit": "40580d82f1a0c5c275ba5c56c85b8c183ab7fe91",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/EveryInc/compound-engineering-plugin/40580d82f1a0c5c275ba5c56c85b8c183ab7fe91/README.md",
+        "bytes": 23297,
+        "sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b"
+      },
+      {
+        "repo": "obra/superpowers",
+        "stars": 315840,
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/obra/superpowers/22f0b463e7a5e579904dd6211a520321035526f7/README.md",
+        "bytes": 14847,
+        "sha256": "79f29f50c735862d2e304ea547b4c9aa67d9db6909ff6fb7b5ea922d7bcbc3e7"
+      },
+      {
+        "repo": "othmanadi/planning-with-files",
+        "stars": 27994,
+        "commit": "73606e0e2c457057ef3445d3217e08495069973d",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/othmanadi/planning-with-files/73606e0e2c457057ef3445d3217e08495069973d/README.md",
+        "bytes": 114020,
+        "sha256": "d6e9b2590bc3e1a958a408670a4e798315a9a80aa98d46a8847fd3fca7edd1c0"
+      },
+      {
+        "repo": "Azure-Samples/serverless-chat-langchainjs",
+        "commit": "ae6df50bb0998753a3c28fdd10ea6127c217c232",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/Azure-Samples/serverless-chat-langchainjs/ae6df50bb0998753a3c28fdd10ea6127c217c232/README.md",
+        "bytes": 18638,
+        "sha256": "c94501dd4e1635ecbd1e59401803b27ccfec287683fa855eb19841fe24e959f8"
+      },
+      {
+        "repo": "Azure-Samples/serverless-recipes-javascript",
+        "commit": "2b05da6daca68fcb571da103c3efe5b4dc765661",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/Azure-Samples/serverless-recipes-javascript/2b05da6daca68fcb571da103c3efe5b4dc765661/README.md",
+        "bytes": 10701,
+        "sha256": "6e1f6e5faab59ccbefe3fb898e67b3bb5391975a5829f8edefcdfbcd4d837179"
+      },
+      {
+        "repo": "sinedied/run-on-output",
+        "commit": "4d8dd6b7ee53fac6ed4362b0c17c4ab625c44354",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/sinedied/run-on-output/4d8dd6b7ee53fac6ed4362b0c17c4ab625c44354/README.md",
+        "bytes": 5068,
+        "sha256": "c2745447ed8c38c32f390b9e2a410ac126aa12ff5a16ca8c1511b5b7e4efe19c"
+      },
+      {
+        "repo": "sinedied/smoke",
+        "commit": "3d4972f7579229dd9d248a8d858d8161860a5e99",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/sinedied/smoke/3d4972f7579229dd9d248a8d858d8161860a5e99/README.md",
+        "bytes": 15999,
+        "sha256": "621b22a91d9950fa97ff134d349ff7e30b3d83c3df8a097fc4e719e73377afcd"
+      }
+    ],
+    "review_scope": "README positioning, installation, usage, workflow, architecture and recovery sections; not a full audit of upstream repositories",
+    "decisions": [
+      "Lead with user purpose and installation",
+      "Provide a complete task prompt, resume prompt and observable CLI walkthrough",
+      "Document current component responsibilities and callback boundaries",
+      "Keep developer research and self-assessment out of the README",
+      "No copied upstream text, badges, popularity claims or unsupported installation URLs"
+    ],
+    "blueprint_generator": "Read for comparison, not applied: its Copilot documentation tree is not present in this repository",
+    "private_material": "No user project code or operational data used"
+  }
+}

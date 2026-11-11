@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task_id": "example-task",
+  "goal": "Replace with the concrete objective.",
+  "acceptance": [
+    {
+      "id": "outcome",
+      "check": "Replace with a measurable check.",
+      "evidence_source": "Replace with saved output or a native result record."
+    }
+  ],
+  "authorization": {
+    "source": null,
+    "allowed_actions": [],
+    "continuation_scope": "design_only_until_actual_authorization_is_recorded"
+  },
+  "limits": [],
+  "stop_conditions": [
+    "valid user/project STOP or PAUSE",
+    "applicable limit exhausted",
+    "overall acceptance verified"
+  ],
+  "retry_policy": {
+    "max_automatic_retries": 0,
+    "requires_diagnosis_and_remaining_limits": true
+  },
+  "evidence": {
+    "executor_source": null,
+    "usage_source": null,
+    "history": "events.jsonl"
+  },
+  "notification_policy": "meaningful changes, completion, failure, recovery, or required user action",
+  "scheduler": {
+    "configured": false,
+    "host": null,
+    "receipt": null
+  }
+}
